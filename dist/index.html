@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body class="bg-white h-screen">
+  <div class="flex items-center justify-between p-4 text-xl font-bold font-serif text-white bg-green-300">
+    <div class="max-w-8">
+      <img class="rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bfodKDS1PyWGNL2RdapXls50QA4Q_jUhaQ&s" alt="Image">
+    </div>
+    <div class="flex-1 text-center">
+      Gizmo Max
+    </div>
+    <div id="menuBar" class="cursor-pointer mb-4">
+      <i class="ri-menu-line"></i>
+    </div>
+  </div>
+  <div class="flex justify-end items-end">
+    <ul id="menuItems" class="gap-3 hidden px-6 text-xl  bg-white rounded-lg shadow-lg mt-4">
+      <li>Home</li>
+      <li>Product</li>
+      <li>Reviews</li>
+      <a href="./contactUs.html">Contact Us</a>
+    </ul>
+  </div>
+  
+  <div class="flex flex-col items-center justify-center bg-white p-8 rounded-lg shadow-lg h-full w-full sticky">
+    <div class="flex justify-center items-center mb-8 w-1/2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8hXaiqXrQsYGVoxbIbM0I4dt4XtCloYN37Q&s" alt="GizmoMax" class="h-full w-full object-cover rounded-lg">
+    </div>
+    <h1 class="text-3xl font-bold mb-4 text-center">Experience the Future with GizmoMax</h1>
+    <p class="text-xl mb-6 text-center">Revolutionize your world with cutting-edge technology.</p>
+    <a href="./product.html" class="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">
+      Learn More
+    </a>
+  </div>
+  <div class="mt-8 text-center">
+    <!-- Social Media Icons -->
+    <div class="flex justify-center space-x-4">
+      <a href="#" class="text-gray-600 hover:text-green-500">
+        <i class="ri-facebook-fill text-xl"></i>
+      </a>
+      <a href="https://www.instagram.com/gizmohub.sg/" class="text-gray-600 hover:text-green-500">
+        <i class="ri-instagram-fill text-xl"></i>
+      </a>
+      <a href="#" class="text-gray-600hover:text-green-500 hover:text-blue-500">
+        <i class="ri-linkedin-fill text-xl"></i>
+      </a>
+    </div>
+
+    <!-- Copyright Notice -->
+    <p class="mt-4 text-gray-600">&copy; 2024 GizmoMax. All rights reserved.</p>
+  </div>
+
+  <script>
+    const menuButton = document.getElementById('menuBar');
+    const menuItems = document.getElementById('menuItems');
+
+    menuButton.addEventListener('click', function() {
+      menuItems.classList.toggle('hidden');
+      menuItems.style.marginTop = '50px';
+    });
+  </script>
+</body>
+</html>
